@@ -66,14 +66,8 @@ class SubCategory extends React.Component {
                 } </ListGroup>
             } {this.state.message &&
             <Col sm={12}>
-                <Alert bsStyle="success"> {
-                    this.state.message.split("\n").map(i => {
-                        return <div> {
-                            i
-                        }
-                        </div>;
-                    })
-                }
+                <Alert bsStyle="success">
+                     <div> {this.state.message}</div>
                 </Alert>
             </Col>
             }
